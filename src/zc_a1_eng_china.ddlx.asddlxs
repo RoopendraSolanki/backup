@@ -1,0 +1,178 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Uuid'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Uuid'
+annotate view ZC_A1_ENG_CHINA with
+{
+  @EndUserText.label: 'Uuid'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Uuid'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Uuid'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Uuid;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Material;
+  
+  @EndUserText.label: 'Uom'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Uom'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Uom'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Uom;
+  
+  @EndUserText.label: 'MatDesc'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'MatDesc'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'MatDesc'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  MatDesc;
+  
+  @EndUserText.label: 'MatSpecs'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'MatSpecs'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'MatSpecs'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  MatSpecs;
+  
+  @EndUserText.label: 'ChiUom'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'ChiUom'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'ChiUom'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  ChiUom;
+  
+  @EndUserText.label: 'ChiMatDesc'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'ChiMatDesc'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'ChiMatDesc'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  ChiMatDesc;
+  
+  @EndUserText.label: 'ChiMatSpecs'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'ChiMatSpecs'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'ChiMatSpecs'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  ChiMatSpecs;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LocalLastChanged;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LastChanged;
+  
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  ChangedBy;
+  
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  @UI.lineItem: [ {
+    position: 130 
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  CreatedAt;
+}

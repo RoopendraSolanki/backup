@@ -1,0 +1,50 @@
+managed implementation in class ZBP_R_A1_ENG_CHINA unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_A1_ENG_CHINA alias ZrA1EngChina
+persistent table ZA1_ENG_CHINA
+draft table ZA1_ENG_CHINA_D
+etag master ChangedBy
+lock master total etag ChangedBy
+authorization master( global )
+
+{
+  field ( readonly )
+   Uuid,
+   LocalLastChanged,
+   LastChanged,
+   ChangedBy,
+   CreatedBy,
+   CreatedAt;
+
+  field ( numbering : managed )
+   Uuid;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZA1_ENG_CHINA
+  {
+    Uuid = uuid;
+    Material = material;
+    Uom = uom;
+    MatDesc = mat_desc;
+    MatSpecs = mat_specs;
+    ChiUom = chi_uom;
+    ChiMatDesc = chi_mat_desc;
+    ChiMatSpecs = chi_mat_specs;
+    LocalLastChanged = local_last_changed;
+    LastChanged = last_changed;
+    ChangedBy = changed_by;
+    CreatedBy = created_by;
+    CreatedAt = created_at;
+  }
+}
